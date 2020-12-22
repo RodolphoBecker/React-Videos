@@ -1,0 +1,8 @@
+iframe {
+    width: 100%;
+}
+#video-title{
+    color: rgb(86, 193, 235);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
