@@ -1,3 +1,3 @@
 # React - Videos
 
-Aplicação em react que consome dados da API do Youtube proporcionando ao usuário um campo de procura de vídeos e retorna como resultado um total de cinco vídeos com o tema procurado. A aplicação é composta também por um vídeo em destaque e uma lista de vídeos relacionados a busca, que ao clicar em um desses, ele atualiza o estado do componente e passa o vídeo clicado para o estado de video em destaque.
+React application that consumes data from the YouTube API providing the user with a video search field and returns as a result a total of five videos with the searched theme. The application is also composed of a featured video and a list of videos related to the search, which when clicking on one of these, it updates the state of the component and changes the clicked video to the state of highlighted video.
