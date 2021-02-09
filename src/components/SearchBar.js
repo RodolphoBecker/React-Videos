@@ -22,21 +22,21 @@ class SearchBar extends Component {
 
     render(){
         return(
-            <div className="searchBar ui segment mt-5 mb-5">
+            <div className="search-bar ui segment mt-5 mb-5 glassmorphism-default-shadow">
                 <form onSubmit={this.formSubmit} id="searchForm" className="ui form">
-                    <label>Ferramenta de procura de Vídeos</label>
+                    <label className="text-yellow mb-5">VIDEOS SEARCH TOOL</label>
                     <div className="d-flex justify-content-between">
 						<input 
 							id="inputText" 
 							type="text" 
-							placeholder="Digite o título de um vídeo"
+							placeholder="Search for a Topic"
 							value={this.state.formInput}
 							onChange={this.inputChange}
 							></input>
 						<input 
 							id="inputSubmit" 
 							type="submit" 
-							value="Procurar"
+							value="Search"
 							onClick={this.formSubmit}
 						></input>
                     </div>
@@ -44,7 +44,7 @@ class SearchBar extends Component {
 
 				{this.props.resultado ? 
 					<div className="resultado">
-						<p>Foram encontrados {this.props.resultado} videos</p>
+						<p className="text-yellow">{this.props.resultado} videos were found</p>
 					</div> 
 				: ''}
             </div>

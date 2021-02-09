@@ -1,0 +1,21 @@
+.glassmorphism-default-color {
+    background-color: #3a306e;
+}
+.glassmorphism-default-shadow {
+    /* box-shadow:  20px 20px 60px #31295e, -20px -20px 60px #43377f !important; */
+    background: #3a306e !important;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-yellow {
+    color: rgb(219, 171, 38) !important;
+}
+.main-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#root {
+    height: 100vh;
+}

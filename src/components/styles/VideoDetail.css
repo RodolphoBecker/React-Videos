@@ -1,3 +1,6 @@
+.iframe-content {
+    padding: 0 !important;
+}
 iframe {
     width: 100%;
 }
@@ -5,4 +8,8 @@ iframe {
     color: rgb(86, 193, 235);
     font-weight: bold;
     font-size: 1.3rem;
+}
+.title-content {
+    padding: 30px !important;
+    margin-top: 0 !important;
 }

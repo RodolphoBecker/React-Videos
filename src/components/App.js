@@ -4,11 +4,12 @@ import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import Loading from './Loading';
 
 class App extends Component {
 
     componentDidMount(){
-        this.onFormInputSubmit('relaxing'); // Essa linha seta um parametro de procura default pra quando o componente é montado primeiramente, no caso, quando o site carrega
+        this.onFormInputSubmit('ReactJs'); // Essa linha seta um parametro de procura default pra quando o componente é montado primeiramente, no caso, quando o site carrega
     }
 
     state = {
@@ -29,19 +30,21 @@ class App extends Component {
     onVideoSelect = (video) => {
         this.setState({ selectedVideo: video });
     }
-
+    
     render(){
         return(
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-lg-12">
-                        <SearchBar onFormSubmit={this.onFormInputSubmit} resultado={this.state.videos.length} />
-                    </div>
-                    <div className="col-12 col-lg-7">
-                        <VideoDetail video={this.state.selectedVideo} />
-                    </div>
-                    <div className="col-12 col-lg-5">
-                        <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+                    <div className="stylized-border d-flex flex-wrap mt-5 mb-5">
+                        <div className="col-12 col-lg-12">
+                            <SearchBar onFormSubmit={this.onFormInputSubmit} resultado={this.state.videos.length} />
+                        </div>
+                        <div className="col-12 col-lg-12">
+                            <VideoDetail video={this.state.selectedVideo} />
+                        </div>
+                        <div className="col-12 col-lg-12">
+                            <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+                        </div>
                     </div>
                 </div>
             </div>
